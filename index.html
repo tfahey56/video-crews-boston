@@ -58,11 +58,18 @@
         
         .hero h1 {font-size:2.2rem;}
         
+        .section {padding:80px 20px;}
+        .container {max-width:1100px; margin:0 auto;}
+        .person {display:flex; gap:30px; margin-bottom:60px; flex-wrap:wrap;}
+        .person img {width:280px; border-radius:8px;}
+        
         @media (max-width: 768px) {
             nav {padding:10px 20px;}
             .logo {font-size:22px;}
             ul {gap:16px;}
             ul li a {font-size:14px;}
+            .hero h1 {font-size:1.9rem;}
+            .person {flex-direction:column;}
         }
     </style>
 </head>
@@ -86,7 +93,34 @@
         </div>
     </section>
 
-    <!-- Rest of your content would go here -->
+    <section class="section">
+        <div class="container">
+            <h2>Meet the Team</h2>
+            
+            <div class="person">
+                <img src="https://via.placeholder.com/280x350" alt="Tom">
+                <div>
+                    <h3>Tom Fahey</h3>
+                    <p>Founder & Cinematographer with 25+ years capturing New England stories.</p>
+                </div>
+            </div>
+
+            <div class="person">
+                <img src="https://via.placeholder.com/280x350" alt="Gilberto">
+                <div>
+                    <h3>Gilberto Rivera</h3>
+                    <p>Director of Photography specializing in aerial and cinematic footage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="our-work">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom:40px;">Our Work</h2>
+            <p style="text-align:center;">Your 14 pictures will go here.</p>
+        </div>
+    </section>
 
 </body>
 </html>
